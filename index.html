@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./lib/anime.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <title>Slutprojekt-Flickr Bildgalleri</title>
+  </head>
+  <body>
+    <main>
+      <h1>Flickr Image Gallery</h1>
+      <p>Search images from Flickr here.</p>
+
+      <form>
+        <input
+          type="text"
+          id="input-search-image"
+          placeholder="Search for images..."
+        />
+
+        <div class="flex-container">
+          <select name="number" class="select" id="select-number">
+            <option value="" disabled selected>Number of images</option>
+            <option value="50">50</option>
+            <option value="150">150</option>
+            <option value="300">300</option>
+            <option value="500">500</option>
+          </select>
+
+          <select name="size" class="select" id="select-size">
+            <option value="" disabled selected>Select size</option>
+            <option value="w">Small</option>
+            <option value="z">Medium</option>
+            <option value="b">Large</option>
+          </select>
+
+          <select name="sort" class="select" id="select-sort">
+            <option value="" disabled selected>Sort by</option>
+            <option value="date-posted-asc">Datum</option>
+            <option value="relevance">Relevance</option>
+            <option value="interestingness-asc">Interestingness</option>
+          </select>
+
+          <button id="submit-button">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <div class="box" id="box">
+      <div class="animation" id="animation"></div>
+      <div class="animation" id="animation"></div>
+      <div class="animation" id="animation"></div>
+    </div>
+
+    <div id="error-message" class="no-error">
+      Could not find anything, please fill in all options!
+    </div>
+
+    <div id="gallery">
+      <div id="images-container"></div>
+    </div>
+  </body>
+</html>
