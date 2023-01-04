@@ -22,12 +22,13 @@ p{
     color: rgb(204, 210, 22);
 }
 
-
-#input-text{
-    padding: 10px 250px;
-    margin-bottom: 3px;
-
+#input-search-image{
+    padding: 8px 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #100c83;
 }
+
 .flex-container{
    display: flex;
    justify-content: space-around;
@@ -80,6 +81,5 @@ button:hover{
 
 #images-container {
     position: relative;
-    /* background-color: #ff6200; */
     
 }
