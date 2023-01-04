@@ -60,6 +60,13 @@ button:hover{
     margin-top: 2em;
 }
 
+#error-message{
+    text-align: center;
+    color: rgb(204, 210, 22);
+    margin: 15px auto;
+    display: none;
+}
+
  #gallery {
     width: 90%;
     height: 80%;
@@ -72,12 +79,6 @@ button:hover{
      margin: 2em auto; 
 } 
 
-#error-message{
-    text-align: center;
-    color: rgb(204, 210, 22);
-    margin: 15px auto;
-    display: none;
-}
 
 #images-container {
     position: relative;
