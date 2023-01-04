@@ -75,6 +75,7 @@ submitButton.addEventListener("click", function (event) {
 });
 
 function fetchflickrImages() {
+  box.style.display = "block";
   const url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=0200293db9de1cd5d263dde837669680&text=${imageTextValue}&per_page=${imageNumberValue}&sort=${imageSortValue}&format=json&nojsoncallback=1`;
 
   fetch(url)
